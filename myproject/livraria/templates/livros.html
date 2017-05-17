@@ -1,0 +1,10 @@
+<h1>Olá, GDG :)</h1>
+
+<h3>Esses são os livros que temos cadastrados:</h3>
+
+{% for livro in livros  %}
+    <p><strong>Titulo: {{ livro.titulo }}</strong></p>
+    <p>Autor: {{ livro.autor.nome }}</p>
+    <p>{{ livro.num_paginas }}</p>
+    <p>----------------------</p>
+{% endfor %}
